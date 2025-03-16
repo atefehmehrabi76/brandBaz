@@ -42,7 +42,7 @@ function MoreServises() {
           />
         </button>
       </div>
-      <div className="flex justify-evenly relative md:top-14 ">
+      <div className="flex justify-evenly gap-5 relative md:top-14 ">
         {carProperti.map((item) => (
           <div
             key={item.id}

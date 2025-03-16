@@ -20,7 +20,7 @@ function ImageHeader() {
             <p>از زیبایی تا ایمنی!</p>
           </div>
 
-          <div className="relative top-[28px] right-[270px] md:right-[130px]">
+          <div className="relative top-[28px] right-[265px] sm:right-[410px] md:right-[130px]">
             <Link
               href={"/"}
               className="inline-flex items-center gap-[5px] md:gap-2 bg-[#0f0f0f] text-white px-2 md:px-4 py-[2px] md:py-1 rounded-[2px] md:rounded-[8px] hover:bg-[#333] transition-colors"

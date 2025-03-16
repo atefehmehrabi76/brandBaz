@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {bestSellersDiscover} from '@/constants/discover'
-
+import { bestSellersDiscover } from "@/constants/discover";
+import { IoIosHeartEmpty } from "react-icons/io";
 
 // change price format
 // const convertToFarsiNumber = (number: number): string => {
@@ -16,7 +16,7 @@ import {bestSellersDiscover} from '@/constants/discover'
 function BestSellers() {
   return (
     <section className="hidden md:block container mx-auto mb-[50px]">
-      <h3 className="text-3xl font-medium px-4 my-5">پر فروش ترین ها</h3>
+      <h3 className="text-3xl font-medium px-10 my-5">پر فروش ترین ها</h3>
       <div className="grid grid-cols-5 gap-10 px-10 ">
         {bestSellersDiscover.map((item) => (
           <Link
@@ -53,13 +53,7 @@ function BestSellers() {
                 <p>{item.title}</p>
               </div>
               <button className="bg-[#CBCBCB] relative w-[36px] h-[34px] rounded-[7.5px] p-1">
-                <Image
-                  src="/images/womenPic/bestseller/like.svg"
-                  alt="like"
-                  className=""
-                  width={26}
-                  height={24}
-                />
+                <IoIosHeartEmpty className="text-white w-[26px] h-[24px] mx-auto" />
               </button>
             </div>
           </Link>

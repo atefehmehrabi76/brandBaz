@@ -17,7 +17,7 @@ const mobileFooter = [
   {
     id: 2,
     title: "Discover",
-    path: "/",
+    path: "/discover",
     icon: <BiCategoryAlt />,
   },
   {
