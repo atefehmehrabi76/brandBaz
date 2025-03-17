@@ -1,22 +1,7 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'IranSans';
-  src: url('/fonts/IRANSansMobileNoEn Medium') format('ttf'),
-       url('/fonts/IRANSansMobileNoEn Medium') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: 'IranSans';
-  src: url('/fonts/IRANSansMobileNoEn Bold') format('ttf'),
-       url('/fonts/IRANSansMobileNoEn Bold') format('ttf');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 
 
@@ -27,3 +12,4 @@ body {
   color: var(--foreground);
   font-family: 'IranSans';
 }
+

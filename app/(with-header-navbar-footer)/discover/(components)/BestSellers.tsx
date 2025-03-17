@@ -15,14 +15,18 @@ import { IoIosHeartEmpty } from "react-icons/io";
 // };
 function BestSellers() {
   return (
-    <section className="hidden md:block container mx-auto mb-[50px]">
-      <h3 className="text-3xl font-medium px-10 my-5">پر فروش ترین ها</h3>
-      <div className="grid grid-cols-5 gap-10 px-10 ">
-        {bestSellersDiscover.map((item) => (
+    <section className=" container mx-auto mb-[50px]">
+      <h3 className="text-2xl md:text-3xl font-medium px-10 my-5">
+        پر فروش ترین ها
+      </h3>
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-10 px-10 ">
+        {bestSellersDiscover.map((item, index) => (
           <Link
             href={"/"}
             key={item.id}
-            className="flex flex-col w-[210px] h-[380px] "
+            className={`flex flex-col w-[210px] h-[380px] ${
+              index === 4 ? "hidden sm:block" : ""
+            } `}
           >
             <div className="bg-white rounded-[10.8px]">
               <div className=" relative w-[35px] h-[35px] mx-auto mt-2">

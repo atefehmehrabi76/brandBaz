@@ -24,7 +24,7 @@ function Header() {
             quality={90}
           />
         </Link>
-        <div className="row-start-2 row-end-3 mx-7 md:row-start-1 md:row-end-2 rounded-[8px] w-[410px] h-[44px] md:h-[30px] flex justify-between items-center  bg-white px-2">
+        <div className="col-start-1 col-end-5 md:col-start-3 md:col-end-4 row-start-2 row-end-3 mx-auto md:row-start-1 md:row-end-2 rounded-[8px] w-[90%] md:w-[410px] h-[44px] md:h-[30px] flex justify-between items-center  bg-white px-2">
           <input
             type="text"
             placeholder="جستجو کنید..."
