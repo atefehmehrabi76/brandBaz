@@ -14,7 +14,7 @@ import "swiper/css";
 function page() {
   return (
     <div>
-      <section className=" flex justify-around mx-10 md:mx-22">
+      <section className=" flex mx-4 md:mx-22">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={10}
@@ -34,19 +34,17 @@ function page() {
           }}
         >
           {userStory.map((user) => (
-            <SwiperSlide>
-              <div
-                key={user.id}
-                className="flex flex-col justify-center items-center"
-              >
+            <SwiperSlide key={user.id}>
+              <div className="flex flex-col justify-center items-center">
                 <Image
                   src={user.image}
                   alt={user.name}
-                  width={70}
-                  height={70}
+                  width={0}
+                  height={0}
                   quality={90}
+                  className="w-13 h-13 md:w-20 md:h-20"
                 />
-                <p className="text-[12px] md:text-[16px] font-medium ">
+                <p className="text-[10px] md:text-[16px] font-medium ">
                   {user.name}
                 </p>
               </div>
@@ -56,8 +54,8 @@ function page() {
       </section>
       <BestSellers />
       <LaxuryBrands />
-      <section className="mx-10 md:mx-20 my-10 ">
-        <h2 className="font-bold text-2xl mb-5 ">برندهای برتر</h2>
+      <section className="mx-5 md:mx-20 my-5 md:my-10 ">
+        <h2 className="font-bold text-xl md:text-2xl mb-3 ">برندهای برتر</h2>
         <div className="flex justify-around items-center ">
           <Swiper
             modules={[Navigation, Pagination]}
@@ -77,15 +75,15 @@ function page() {
             className="w-full"
           >
             {bartarBrands.map((item) => (
-              <SwiperSlide>
-                <div key={item.id}>
+              <SwiperSlide key={item.id}>
+                <div>
                   <Image
                     src={item.image}
                     alt={item.name}
                     width={0}
                     height={0}
                     quality={90}
-                    className="w-[70px] h-[40px]"
+                    className="w-[45px] md:w-[70px] h-[27px] md:h-[40px]"
                   />
                 </div>
               </SwiperSlide>
@@ -93,8 +91,8 @@ function page() {
           </Swiper>
         </div>
       </section>
-      <section className=" mx-10 md:mx-20 my-10">
-        <h2 className="font-bold text-2xl mb-5 ">برندهای ایرانی</h2>
+      <section className=" mx-5 md:mx-20 my-5 md:my-10">
+        <h2 className="font-bold text-xl md:text-2xl mb-3 ">برندهای ایرانی</h2>
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={10}
@@ -121,7 +119,7 @@ function page() {
                     width={0}
                     height={0}
                     quality={90}
-                    className="w-[70px] h-[40px]"
+                    className="w-[45px] md:w-[70px] h-[27px] md:h-[40px]"
                   />
                 </div>
               </SwiperSlide>

@@ -13,8 +13,10 @@ import { IoIosHeartEmpty } from "react-icons/io";
 
 function LaxuryBrands() {
   return (
-    <section className="container mx-auto mb-5 px-10">
-      <h2 className="text-2xl font-medium  my-5">برندهای لاکچری</h2>
+    <section className="container mx-auto  px-5">
+      <h2 className="text-xl md:text-2xl font-medium my-2 md:my-5">
+        برندهای لاکچری
+      </h2>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={10}
@@ -22,12 +24,12 @@ function LaxuryBrands() {
         loop={true}
         breakpoints={{
           0: {
-            spaceBetween: 5,
+            spaceBetween: 4,
             slidesPerView: 5,
           },
           640: {
-            spaceBetween: 10,
-            slidesPerView: 10,
+            spaceBetween: 8,
+            slidesPerView: 11,
           },
         }}
       >
@@ -38,10 +40,10 @@ function LaxuryBrands() {
                 <Image
                   src={item.image}
                   alt="brand"
-                  width={80}
-                  height={80}
+                  width={0}
+                  height={0}
                   quality={90}
-                  className=""
+                  className="w-12 h-12 md:w-20 md:h-20"
                 />
               </Link>
             </SwiperSlide>
@@ -61,25 +63,28 @@ function LaxuryBrands() {
               slidesPerView: 3,
             },
             640: {
-              spaceBetween: 10,
+              spaceBetween: 8,
               slidesPerView: 8,
             },
           }}
-          className="w-full  h-[273px] md:h-[303px]  mt-5 bg-[#DEB887] z-0 rounded-2xl"
+          className="w-full  h-[253px] md:h-[303px] mt-3 md:mt-5 bg-[#DEB887] z-0 rounded-2xl"
         >
           {laxuryProduct.map((item) => (
-            <SwiperSlide key={item.id} className=" rounded-lg mt-8 mr-8">
-              <div className="bg-white  h-[180px] md:h-[204px] z-30 rounded-[8px] ">
+            <SwiperSlide
+              key={item.id}
+              className=" rounded-lg mt-5 md:mt-8 mr-6 md:mr-8"
+            >
+              <div className="bg-white w-[130px] md:w-[155px] h-[170px] md:h-[204px] z-30 rounded-[8px] ">
                 <Image
                   src={item.image}
                   alt={item.name}
                   width={0}
                   height={0}
                   quality={90}
-                  className="mx-auto w-[145px] h-[150px] md:w-[211px] md:h-[170px]"
+                  className="mx-auto w-[145px] h-[160px] md:w-[211px] md:h-[170px]"
                 />
-                <button className="bg-[#CBCBCB] relative right-25 w-[28px] h-[26px] rounded-[7.5px]">
-                  <IoIosHeartEmpty className="text-white w-[26px] h-[24px] mx-auto" />
+                <button className="bg-[#CBCBCB] relative right-25 bottom-[17px] md:bottom-0 md:right-30 w-[24px] md:w-[26px] h-[22px] md:h-[24px] rounded-[7.5px]">
+                  <IoIosHeartEmpty className="text-white w-[22px] md:w-[24px] h-[20px] md:h-[22px] mx-auto" />
                 </button>
               </div>
             </SwiperSlide>

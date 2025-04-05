@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { bestSellersWomen } from "@/constants/womenProduct";
 
-
 // change price format
 // const convertToFarsiNumber = (number: number): string => {
 //   const farsiDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
@@ -15,9 +14,9 @@ import { bestSellersWomen } from "@/constants/womenProduct";
 // };
 function BestSellers() {
   return (
-    <section className="hidden md:block container mx-auto mb-[50px]">
-      <h3 className="text-3xl font-medium px-10 my-5">پر فروش ترین ها</h3>
-      <div className="grid grid-cols-5 gap-10 px-10 ">
+    <section className="hidden md:block container mx-auto mb-[50px] px-4">
+      <h3 className="text-3xl font-medium  my-5">پر فروش ترین ها</h3>
+      <div className="grid grid-cols-5 gap-10  ">
         {bestSellersWomen.map((item) => (
           <Link
             href={"/"}

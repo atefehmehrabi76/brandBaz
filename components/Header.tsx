@@ -4,11 +4,13 @@ import Link from "next/link";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { PiShoppingBag } from "react-icons/pi";
 import { CiUser } from "react-icons/ci";
+// import { IoIosSearch } from "react-icons/io";
+import SearchBox from "./(home)/SearchBox";
 
 function Header() {
   return (
     <header className="w-full">
-      <div className="grid grid-cols-4 grid-rows-2  items-center md:gap-5 pt-7  md:pr-10 ">
+      <div className="grid grid-cols-4 grid-rows-2 md:grid-rows-1 items-center md:gap-5 pt-7  md:pr-10 ">
         <Link
           href="/"
           className="md:col-start-1 md:col-end-3  col-start-2 col-end-4 py-5 md:py-0 pr-13 md:pr-0
@@ -24,23 +26,17 @@ function Header() {
             quality={90}
           />
         </Link>
-        <div className="col-start-1 col-end-5 md:col-start-3 md:col-end-4 row-start-2 row-end-3 mx-auto md:row-start-1 md:row-end-2 rounded-[8px] w-[90%] md:w-[410px] h-[44px] md:h-[30px] flex justify-between items-center  bg-white px-2">
+        {/* <div className="col-start-1 col-end-5 md:col-start-3 md:col-end-4 row-start-2 row-end-3 mx-auto md:row-start-1 md:row-end-2 rounded-[8px] w-[90%] md:w-[410px] h-[44px] md:h-[33px] flex justify-between items-center  bg-white px-2">
           <input
             type="text"
             placeholder="جستجو کنید..."
-            className="w-full h-10 rounded-lg  pr-4 pl-12 outline-none "
+            className="w-full h-10 rounded-lg  pr-3 pl-12 outline-none placeholder-gray-300"
           />
           <button type="button" className="" aria-label="جستجو">
-            <Image
-              src="/images/Vector1.png"
-              width={20}
-              height={20}
-              alt=""
-              className="object-contain"
-              quality={90}
-            />
+            <IoIosSearch className="text-gray-400" />
           </button>
-        </div>
+        </div> */}
+        <SearchBox />
 
         <div className="flex  col-start-4 col-end-5 items-center gap-5 mr-11 md:mr-2 md:pr-26">
           <div className="flex items-center gap-3">

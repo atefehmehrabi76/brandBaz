@@ -15,13 +15,15 @@ function MainWomen() {
           >
             <div>
               <span
-                className={`${
-                  index >= 4 ? "text-[60px]" : "text-[80px] "
+                className={`m-5 ${
+                  index >= 4
+                    ? "text-[40px] md:text-[60px]"
+                    : "text-[60px] md:text-[80px] "
                 } font-bold text-[#DEB88733]`}
               >
                 {product.placeholder}
               </span>
-              <h3 className="text-4xl font-medium relative right-8 bottom-10">
+              <h3 className="text-3xl md:text-4xl font-medium relative right-8 bottom-8  md:bottom-10">
                 {product.title}
               </h3>
             </div>

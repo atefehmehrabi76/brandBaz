@@ -10,7 +10,7 @@ import "swiper/css";
 
 function ImageHeader() {
   return (
-    <div className="px-5 md:px-20">
+    <div className="px-5 md:px-18">
       <Swiper
         modules={[Navigation, Pagination]}
         slidesPerView={1}
@@ -33,7 +33,7 @@ function ImageHeader() {
                 <p>از زیبایی تا ایمنی!</p>
               </div>
 
-              <div className="relative top-[28px] right-[265px] sm:right-[410px] md:right-[130px]">
+              <div className="relative top-[36px] right-[242px] sm:right-[410px] md:right-[130px]">
                 <Link
                   href={"/"}
                   className="inline-flex items-center gap-[5px] md:gap-2 bg-[#0f0f0f] text-white px-2 md:px-4 py-[2px] md:py-1 rounded-[2px] md:rounded-[8px] hover:bg-[#333] transition-colors"

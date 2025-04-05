@@ -15,9 +15,9 @@ import { bestSellersWomen } from "@/constants/womenProduct";
 // };
 function Favorites() {
   return (
-    <section className="hidden md:block container mx-auto mb-[10px]">
-      <h3 className="text-3xl font-medium px-10 my-5">محبوب ترین ها</h3>
-      <div className="grid grid-cols-5 gap-10 px-10 ">
+    <section className="hidden md:block container mx-auto mb-[10px] px-4">
+      <h3 className="text-3xl font-medium  my-5">محبوب ترین ها</h3>
+      <div className="grid grid-cols-5 gap-10  ">
         {bestSellersWomen.map((item) => (
           <Link
             href={"/"}

@@ -10,12 +10,11 @@ function page() {
       <MainWomen />
       <BestSellers />
 
-      <div className="hidden md:block h-[350px] mb-6 mx-auto container">
-        <div className="relative mx-auto w-[1200px] h-[350px]">
+      <div className="hidden md:block h-[350px] mb-6 mx-auto container ">
+        <div className="relative mx-auto w-[1240px] h-[350px]">
           <Image
             src="/images/homePic/coolection1.png"
             fill
-            sizes="(max-width: 1200px) 100vw, 1200px"
             quality={90}
             alt="collection1"
             className="object-cover"

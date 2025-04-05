@@ -50,7 +50,7 @@ function FooterMobile() {
     }
   }, [pathname]);
   return (
-    <div className="h-[77px] bg-white flex justify-evenly md:hidden fixed bottom-0 right-0 left-0 border-t border-[0.5px] border-[#CBCBCB]">
+    <div className="h-[77px] bg-white flex justify-evenly md:hidden fixed bottom-0 right-0 left-0 border-t border-[0.5px] border-[#CBCBCB] z-70">
       {mobileFooter.map((item) => (
         <Link
           href={item.path}

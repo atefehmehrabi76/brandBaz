@@ -355,7 +355,7 @@ export const iranianBrands = [
   },
 ];
 
-export const bestSellerDiscover2=[
+export const bestSellerDiscover2 = [
   {
     id: 6,
     brand: "/images/womenPic/bestseller/alo.svg",
@@ -391,4 +391,63 @@ export const bestSellerDiscover2=[
     title: "کتونی مدل 2023",
     price: "37000000",
   },
-]
+];
+
+export const seenRecently = [
+  {
+    id: 1,
+    brand: "/images/womenPic/bestseller/alo.svg",
+    image: "/images/womenPic/bestseller/hat.png",
+    title: "کتونی مدل 2023",
+    price: "37000000",
+  },
+  {
+    id: 2,
+    brand: "/images/womenPic/bestseller/alo.svg",
+    image: "/images/womenPic/bestseller/sports.png",
+    title: "کتونی مدل 2023",
+    price: "37000000",
+  },
+  {
+    id: 3,
+    brand: "/images/womenPic/bestseller/hm.svg",
+    image: "/images/womenPic/bestseller/dress.png",
+    title: "کتونی مدل 2023",
+    price: "37000000",
+  },
+  {
+    id: 4,
+    brand: "/images/womenPic/bestseller/alo.svg",
+    image: "/images/womenPic/bestseller/hat.png",
+    title: "کتونی مدل 2023",
+    price: "37000000",
+  },
+  {
+    id: 5,
+    brand: "/images/womenPic/bestseller/adidas.svg",
+    image: "/images/womenPic/bestseller/shose.png",
+    title: "کتونی مدل 2023",
+    price: "37000000",
+  },
+  {
+    id: 6,
+    brand: "/images/womenPic/bestseller/hm.svg",
+    image: "/images/womenPic/bestseller/dress.png",
+    title: "کتونی مدل 2023",
+    price: "37000000",
+  },
+  {
+    id: 7,
+    brand: "/images/womenPic/bestseller/alo.svg",
+    image: "/images/womenPic/bestseller/hat.png",
+    title: "کتونی مدل 2023",
+    price: "37000000",
+  },
+  {
+    id: 8,
+    brand: "/images/womenPic/bestseller/adidas.svg",
+    image: "/images/womenPic/bestseller/shose.png",
+    title: "کتونی مدل 2023",
+    price: "37000000",
+  },
+];
