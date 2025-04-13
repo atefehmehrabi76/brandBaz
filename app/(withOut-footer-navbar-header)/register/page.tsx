@@ -48,7 +48,7 @@ function page() {
           type="submit"
           className="bg-black w-full  rounded-[8px] h-[40px] text-[17px] md:text-[20px] font-medium  text-white"
         >
-          <Link href={"/"}>ثبت نام</Link>
+          <Link href={"/completedLogin"}>ثبت نام</Link>
         </button>
       </form>
     </div>

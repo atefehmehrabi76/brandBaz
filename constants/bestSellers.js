@@ -1,4 +1,3 @@
-import { group } from "console";
 import katoni from "../public/images/homePic/bestseller/katoni.png";
 import makeup from "../public/images/homePic/bestseller/makeup.png";
 import Rectangle from "../public/images/homePic/bestseller/Rectangle.png";

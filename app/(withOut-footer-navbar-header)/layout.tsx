@@ -6,7 +6,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="font-iransans overflow-x-hidden">
+    <section className="font-Iransans overflow-x-hidden">
       {children}
       <FooterMobile />
     </section>

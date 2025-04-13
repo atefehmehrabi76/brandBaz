@@ -66,8 +66,18 @@ export const bestSellersDiscover = [
     id: 1,
     brand: "/images/womenPic/bestseller/gucci.svg",
     image: "/images/womenPic/bestseller/oral.png",
-    title: "کتونی مدل 2023",
+    images: [
+      "/images/womenPic/golbehiDress.png",
+      "/images/womenPic/coatDressBlack.png",
+      "/images/womenPic/coatDressgreen.png",
+    ],
+    title: " اورال کوتاه ساتن ",
     price: "37000000",
+    colors: ["#EEB7A3", "#11111E", "#8A8977"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    content:
+      "اورال ساتن پارچه‌ای نرم و براق است که به دلیل جلوه لوکس و ابریشمی‌اش در طراحی لباس‌های شب و مجلسی محبوب است. این پارچه معمولاً از الیاف مصنوعی یا ترکیبی ساخته می‌شود ",
+    description: "",
   },
   {
     id: 2,
@@ -75,6 +85,10 @@ export const bestSellersDiscover = [
     image: "/images/womenPic/bestseller/watch.png",
     title: "کتونی مدل 2023",
     price: "37000000",
+    colors: ["سفید", "مشکی"],
+    sizes: ["38", "39", "40", "41", "42"],
+    content:
+      "اورال ساتن پارچه‌ای نرم و براق است که به دلیل جلوه لوکس و ابریشمی‌اش در طراحی لباس‌های شب و مجلسی محبوب است. این پارچه معمولاً از الیاف مصنوعی یا ترکیبی ساخته می‌شود ",
   },
   {
     id: 3,
@@ -82,6 +96,10 @@ export const bestSellersDiscover = [
     image: "/images/womenPic/bestseller/shose.png",
     title: "کتونی مدل 2023",
     price: "37000000",
+    colors: ["سبز", "مشکی", "گلبهی"],
+    sizes: ["s", "m", "l", "xl", "xxl"],
+    content:
+      "اورال ساتن پارچه‌ای نرم و براق است که به دلیل جلوه لوکس و ابریشمی‌اش در طراحی لباس‌های شب و مجلسی محبوب است. این پارچه معمولاً از الیاف مصنوعی یا ترکیبی ساخته می‌شود ",
   },
   {
     id: 4,
@@ -89,6 +107,10 @@ export const bestSellersDiscover = [
     image: "/images/womenPic/bestseller/hat.png",
     title: "کتونی مدل 2023",
     price: "37000000",
+    colors: ["سبز", "مشکی", "گلبهی"],
+    sizes: ["s", "m", "l", "xl", "xxl"],
+    content:
+      "اورال ساتن پارچه‌ای نرم و براق است که به دلیل جلوه لوکس و ابریشمی‌اش در طراحی لباس‌های شب و مجلسی محبوب است. این پارچه معمولاً از الیاف مصنوعی یا ترکیبی ساخته می‌شود ",
   },
   {
     id: 5,
@@ -96,6 +118,10 @@ export const bestSellersDiscover = [
     image: "/images/womenPic/bestseller/shose.png",
     title: "کتونی مدل 2023",
     price: "37000000",
+    colors: ["سبز", "مشکی", "گلبهی"],
+    sizes: ["s", "m", "l", "xl", "xxl"],
+    content:
+      "اورال ساتن پارچه‌ای نرم و براق است که به دلیل جلوه لوکس و ابریشمی‌اش در طراحی لباس‌های شب و مجلسی محبوب است. این پارچه معمولاً از الیاف مصنوعی یا ترکیبی ساخته می‌شود ",
   },
 ];
 

@@ -1,3 +1,4 @@
+"use client";
 import BestSeller from "@/components/(home)/BestSeller";
 import ImageHeader from "@/components/(home)/ImageHeader";
 import MoreServises from "@/components/(home)/MoreServises";

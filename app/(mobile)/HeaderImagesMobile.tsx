@@ -16,7 +16,7 @@ function HeaderImagesMobile() {
               className="object-contain"
             />
           </div>
-          <h3 className="text-center text-[17px] font-bold mt-1">
+          <h3 className="text-center text-[11px] font-medium mt-1">
             {item.title}
           </h3>
         </Link>

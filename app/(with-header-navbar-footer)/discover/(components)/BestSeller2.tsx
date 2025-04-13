@@ -16,13 +16,13 @@ import { IoIosHeartEmpty } from "react-icons/io";
 function BestSellers2() {
   return (
     <section className=" container mx-auto mb-[90px] md:mb-[50px] px-6">
-      <h3 className="text-xl md:text-3xl font-medium   my-5">
+      <h3 className="text-[14px] md:text-3xl font-bold md:font-medium  mb-5 md:my-8">
         پر فروش ترین ها
       </h3>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-10 ">
         {bestSellerDiscover2.map((item, index) => (
           <Link
-            href={"/"}
+            href={`${item.id}`}
             key={item.id}
             className={`flex flex-col w-[158px] md:w-[210px] h-[320px] md:h-[380px] ${
               index === 4 ? "hidden md:block" : ""
@@ -65,14 +65,16 @@ function BestSellers2() {
           </Link>
         ))}
       </div>
-      <button className="bg-black flex justify-center gap-[6px] h-[24px] md:h-[34px] w-[70px] md:w-[100px] border rounded-[8px] relative   right-[275px] md:right-[1127px]">
-        <span className="text-white text-[16px] md:text-[20px]">بیشتر</span>
+      <button className="bg-black flex justify-center gap-[6px] h-[22px] md:h-[34px] w-[70px] md:w-[100px] border rounded-[8px] relative   right-[275px] md:right-[1127px]">
+        <span className="text-white font-normal text-[10px] md:text-[20px]">
+          بیشتر
+        </span>
         <Image
           src="/images/homePic/Vector.png"
           width={0}
           height={0}
           alt=""
-          className="w-2 h-[11px] md:h-4 relative top-[6px] md:top-[8px]"
+          className="w-2 h-[9px] md:h-4 relative top-[6px] md:top-[8px]"
         />
       </button>
     </section>

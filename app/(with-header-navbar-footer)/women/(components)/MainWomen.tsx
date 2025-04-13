@@ -11,28 +11,27 @@ function MainWomen() {
           <Link
             href={"/"}
             key={product.id}
-            className="flex justify-around bg-white rounded-[8px]"
+            className="flex justify-around h-[130px] md:h-[160px] bg-white rounded-[8px]"
           >
-            <div>
+            <div className="my-auto">
               <span
-                className={`m-5 ${
+                className={`m-5 font-bold ${
                   index >= 4
-                    ? "text-[40px] md:text-[60px]"
+                    ? "text-[36px] md:text-[60px]"
                     : "text-[60px] md:text-[80px] "
                 } font-bold text-[#DEB88733]`}
               >
                 {product.placeholder}
               </span>
-              <h3 className="text-3xl md:text-4xl font-medium relative right-8 bottom-8  md:bottom-10">
+              <h3 className="text-2xl md:text-4xl font-medium relative right-8 bottom-8  md:bottom-10">
                 {product.title}
               </h3>
             </div>
-            <div className="w-[215px] h-[143px] relative">
+            <div className=" w-[215px]  relative">
               <Image
                 src={product.image}
                 className="object-contain"
                 fill={true}
-                sizes="(max-width: 1200px) 100vw, 215px"
                 alt={product.title}
                 priority={product.id <= 2}
                 quality={90}

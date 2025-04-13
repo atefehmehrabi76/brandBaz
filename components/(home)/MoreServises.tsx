@@ -34,16 +34,16 @@ function MoreServises() {
     <div className="   h-[238px] md:h-[349px]  bg-[#cbcbcb] pr-5 md:pr-20">
       <div className="flex justify-between md:p-0 py-4 relative md:ml-20 md:top-8">
         <div>
-          <h3 className="font-medium text-[13px] md:font-bold md:text-[28px] ">
+          <h3 className="text-[13px] font-medium md:text-[28px] ">
             همه خدمات خودرویی در یکجا!
           </h3>
-          <p className="text-[10px] md:text-[20px]">
+          <p className="text-[9px] md:text-[20px] font-normal">
             از خرید و فروش تا خدمات پس از فروش، همه‌چیز را در یک مکان تجربه
             کنید.
           </p>
         </div>
-        <button className="bg-black flex justify-center gap-[5px] h-[24.5px] md:h-[33px] w-[68px] md:w-[113px] border rounded-[9.2px] md:rounded-[8px] ml-5 md:ml-0">
-          <span className="text-white text-[13px] md:text-[20px]">بیشتر</span>
+        <button className="bg-black flex justify-center gap-[5px] h-[22.5px] md:h-[33px] w-[68px] md:w-[113px] border rounded-[9.2px] md:rounded-[8px] ml-5 md:ml-0">
+          <span className="text-white text-[11px] md:text-[20px]">بیشتر</span>
           <Image
             src="/images/homePic/Vector.png"
             width={8}
@@ -75,7 +75,7 @@ function MoreServises() {
                     className="object-contain"
                   />
                 </div>
-                <span className="text-[13px] md:text-[18px] font-medium relative bottom-[35px]  md:bottom-[15px] right-[10px] md:right-[20px]">
+                <span className="text-[10px] md:text-[18px] font-medium relative bottom-[35px]  md:bottom-[15px] right-[10px] md:right-[20px]">
                   {item.title}
                 </span>
               </div>

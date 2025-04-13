@@ -3,6 +3,7 @@ import FooterLinks from "./(components)/FooterLinksContainer";
 import SocialLinks from "./(components)/SocialLinks";
 import Image from "next/image";
 import FooterCantactUs from "./(components)/FooterCantactUs";
+import { PiCopyrightLight } from "react-icons/pi";
 
 function Footer() {
   return (
@@ -21,14 +22,9 @@ function Footer() {
           <SocialLinks />
         </div>
       </div>
-      <div className="flex gap-2 justify-center py-3 border-t-1 border-gray-400 mx-20">
-        <Image
-          src="/footerimg/Vector.png"
-          height={18}
-          width={20}
-          alt="copyright"
-        />
-        <span className="text-black ">
+      <div className="flex gap-[6px] justify-center items-center py-3 border-t-1 border-gray-400 mx-20">
+        <PiCopyrightLight className="w-5 h-5" />
+        <span className="text-black font-light text-[16px] ">
           کلیه حقوق مادی و معنوی این سایت متعلق به برندباز می باشد
         </span>
       </div>

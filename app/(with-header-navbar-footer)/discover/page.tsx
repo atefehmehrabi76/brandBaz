@@ -20,8 +20,6 @@ function page() {
           spaceBetween={10}
           slidesPerView={11}
           loop={true}
-          // pagination={{ clickable: true }}
-
           breakpoints={{
             0: {
               spaceBetween: 5,
@@ -55,7 +53,9 @@ function page() {
       <BestSellers />
       <LaxuryBrands />
       <section className="mx-5 md:mx-20 my-5 md:my-10 ">
-        <h2 className="font-bold text-xl md:text-2xl mb-3 ">برندهای برتر</h2>
+        <h2 className="font-bold text-[14px] md:text-[24px] mb-3 ">
+          برندهای برتر
+        </h2>
         <div className="flex justify-around items-center ">
           <Swiper
             modules={[Navigation, Pagination]}
@@ -92,7 +92,9 @@ function page() {
         </div>
       </section>
       <section className=" mx-5 md:mx-20 my-5 md:my-10">
-        <h2 className="font-bold text-xl md:text-2xl mb-3 ">برندهای ایرانی</h2>
+        <h2 className="font-bold text-[14px] md:text-2xl mb-3 ">
+          برندهای ایرانی
+        </h2>
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={10}

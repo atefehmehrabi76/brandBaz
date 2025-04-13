@@ -1,9 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { navList } from "@/constants/navList";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 function NavBar() {
   const [activeItem, setActiveItem] = useState<number | null>(null);
+  const pathname = usePathname();
+  useEffect(() => {
+    const currentItem = navList.find((item) => item.href === pathname);
+    if (currentItem) {
+      setActiveItem(currentItem.id);
+    }
+  }, [pathname]);
   return (
     <nav className="hidden md:block w-full  bg-gray-100  border-b border-b-[#CBCBCB] my-7 ">
       <div className="contaner mx-auto">

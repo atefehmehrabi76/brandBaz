@@ -14,7 +14,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 function LaxuryBrands() {
   return (
     <section className="container mx-auto  px-5">
-      <h2 className="text-xl md:text-2xl font-medium my-2 md:my-5">
+      <h2 className="text-[14px] md:text-2xl font-medium my-2 md:my-5">
         برندهای لاکچری
       </h2>
       <Swiper

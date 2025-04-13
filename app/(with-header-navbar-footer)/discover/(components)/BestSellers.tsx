@@ -1,59 +1,76 @@
-import React from "react";
+"use client";
 import Link from "next/link";
 import Image from "next/image";
-import { bestSellersDiscover } from "@/constants/discover";
+// import { bestSellersDiscover } from "@/constants/discover";
 import { IoIosHeartEmpty } from "react-icons/io";
+// import axios from "axios";
+import useFetch from "@/requests/useFetch";
 
-// change price format
-// const convertToFarsiNumber = (number: number): string => {
-//   const farsiDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
-//   return number
-//     .toString()
-//     .split("")
-//     .map((digit) => farsiDigits[parseInt(digit)] || digit)
-//     .join("");
-// };
 function BestSellers() {
+  const baseUrl = "https://brand-baz.liara.run";
+  const { data } = useFetch(
+    "https://brand-baz.liara.run/api/v1/product/all?page=1"
+  );
+  console.log(data);
+  // const [data, setData] = useState<any>([]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         "https://brand-baz.liara.run/api/v1/product/all?page=1"
+  //       );
+  //       setData(response.data.data);
+  //       console.log(response.data.data);
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
+
   return (
     <section className=" container mx-auto md:mb-[50px] px-6">
-      <h3 className="text-xl md:text-3xl font-medium  my-5"> محصولات ویژه</h3>
+      <h3 className="text-[14px] md:text-2xl font-bold md:font-medium  my-5">
+        محصولات ویژه
+      </h3>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-5  md:gap-10  ">
-        {bestSellersDiscover.map((item, index) => (
+        {data?.map((item: any, index: number) => (
           <Link
-            href={"/"}
-            key={item.id}
+            href={`/product/${item._id}`}
+            key={item.product._id}
             className={`flex flex-col w-[158px] md:w-[210px] h-[320px] md:h-[380px] ${
               index === 4 ? "hidden sm:block" : ""
             } `}
           >
             <div className="bg-white rounded-[10.8px]">
-              <div className=" relative w-[38px] h-[25px] md:h-[35px] mx-auto mt-2">
+              <div className=" relative w-[40px] h-[25px] md:h-[20px] mx-auto mt-2">
                 <Image
-                  src={item.brand}
-                  alt={item.title}
+                  src={`${baseUrl}${item.product.brand.image}`}
+                  alt={item.product.title}
                   className=""
-                  quality={90}
                   fill
+                  crossOrigin="anonymous"
+                  quality={90}
                 />
               </div>
               <div className="relative w-[145px] md:w-[180px] h-[210px] md:h-[240px] mx-auto">
                 <Image
-                  src={item.image}
+                  src={`${baseUrl}${item.images[0]?.image}`}
                   fill
                   className=""
-                  alt={item.title}
+                  alt={item.product.title}
                   quality={90}
+                  crossOrigin="anonymous"
                 />
               </div>
             </div>
             <div className="flex justify-between mt-3">
               <div>
                 <p className="font-normal text-[14px] md:text-[18px]">
-                  {/* {convertToFarsiNumber(item.price)} تومان */}
-                  {item.price} تومان
+                  3700000 تومان
                 </p>
                 <p className="text-[12px] md:text-[16px] font-light">
-                  {item.title}
+                  {item.product.title}
                 </p>
               </div>
               <button className="bg-[#CBCBCB] relative w-[28px] md:w-[36px] h-[26px] md:h-[34px] rounded-[7.5px] p-1">
@@ -63,14 +80,16 @@ function BestSellers() {
           </Link>
         ))}
       </div>
-      <button className="bg-black flex justify-center gap-[6px] h-[24px] md:h-[34px] w-[70px] md:w-[100px] border rounded-[8px] relative   right-[275px] md:right-[1127px]">
-        <span className="text-white text-[16px] md:text-[20px]">بیشتر</span>
+      <button className="bg-black flex justify-center gap-[6px] h-[22px] md:h-[34px] w-[70px] md:w-[100px] border rounded-[8px] relative   right-[275px] md:right-[1127px]">
+        <span className="text-white font-normal text-[10px] md:text-[20px]">
+          بیشتر
+        </span>
         <Image
           src="/images/homePic/Vector.png"
           width={0}
           height={0}
           alt=""
-          className="w-2 h-[11px] md:h-4 relative top-[6px] md:top-[8px]"
+          className="w-2 h-[9px] md:h-4 relative top-[6px] md:top-[8px]"
         />
       </button>
     </section>
