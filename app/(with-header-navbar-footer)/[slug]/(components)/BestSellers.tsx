@@ -3,15 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { bestSellersWomen } from "@/constants/womenProduct";
 
-// change price format
-// const convertToFarsiNumber = (number: number): string => {
-//   const farsiDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
-//   return number
-//     .toString()
-//     .split("")
-//     .map((digit) => farsiDigits[parseInt(digit)] || digit)
-//     .join("");
-// };
 function BestSellers() {
   return (
     <section className="hidden md:block container mx-auto mb-[50px] px-4">
@@ -45,10 +36,7 @@ function BestSellers() {
             </div>
             <div className="flex justify-between mt-3">
               <div>
-                <p className="font-normal text-[18px]">
-                  {/* {convertToFarsiNumber(item.price)} تومان */}
-                  {item.price} تومان
-                </p>
+                <p className="font-normal text-[18px]">{item.price} تومان</p>
                 <p>{item.title}</p>
               </div>
               <button className="bg-[#CBCBCB] relative w-[36px] h-[34px] rounded-[7.5px] p-1">

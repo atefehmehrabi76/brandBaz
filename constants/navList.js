@@ -11,31 +11,36 @@ export const navList = [
   },
   {
     id: 3,
+    name: "فروشگاه",
+    href: "/",
+  },
+  {
+    id: 4,
     name: "زنانه",
     href: "/women",
   },
   {
-    id: 4,
+    id: 5,
     name: "مردانه",
     href: "/",
   },
   {
-    id: 5,
+    id: 6,
     name: "کودکانه",
     href: "/",
   },
   {
-    id: 6,
+    id: 7,
     name: "ساعت",
     href: "/",
   },
   {
-    id: 7,
+    id: 8,
     name: "کیف",
     href: "/",
   },
   {
-    id: 8,
+    id: 9,
     name: "کتانی",
     href: "/",
   },

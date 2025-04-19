@@ -1,51 +1,32 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-// import { bestSellersDiscover } from "@/constants/discover";
 import { IoIosHeartEmpty } from "react-icons/io";
-// import axios from "axios";
 import useFetch from "@/requests/useFetch";
 
 function BestSellers() {
-  const baseUrl = "https://brand-baz.liara.run";
-  const { data } = useFetch(
-    "https://brand-baz.liara.run/api/v1/product/all?page=1"
-  );
+  const { data, baseUrl } = useFetch("product/all?page=1");
+  const baseUrlImg = baseUrl.split("/api/v1/").slice(0, 3)[0].toString();
   console.log(data);
-  // const [data, setData] = useState<any>([]);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         "https://brand-baz.liara.run/api/v1/product/all?page=1"
-  //       );
-  //       setData(response.data.data);
-  //       console.log(response.data.data);
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
 
   return (
     <section className=" container mx-auto md:mb-[50px] px-6">
       <h3 className="text-[14px] md:text-2xl font-bold md:font-medium  my-5">
-        محصولات ویژه
+        پرفروش ترین ها
       </h3>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-5  md:gap-10  ">
         {data?.map((item: any, index: number) => (
           <Link
-            href={`/product/${item._id}`}
+            href={`/product/${item.product?._id}`}
             key={item.product._id}
             className={`flex flex-col w-[158px] md:w-[210px] h-[320px] md:h-[380px] ${
               index === 4 ? "hidden sm:block" : ""
             } `}
           >
             <div className="bg-white rounded-[10.8px]">
-              <div className=" relative w-[40px] h-[25px] md:h-[20px] mx-auto mt-2">
+              <div className=" relative w-[65px] h-[25px] md:h-[13px] mx-auto m-3">
                 <Image
-                  src={`${baseUrl}${item.product.brand.image}`}
+                  src={`${baseUrlImg}/${item.product.brand.image}`}
                   alt={item.product.title}
                   className=""
                   fill
@@ -55,7 +36,7 @@ function BestSellers() {
               </div>
               <div className="relative w-[145px] md:w-[180px] h-[210px] md:h-[240px] mx-auto">
                 <Image
-                  src={`${baseUrl}${item.images[0]?.image}`}
+                  src={`${baseUrlImg}/${item.images[0]?.image}`}
                   fill
                   className=""
                   alt={item.product.title}
