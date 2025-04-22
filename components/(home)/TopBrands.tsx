@@ -69,7 +69,7 @@ function TopBrands() {
               <p className="font-extrabold mb-3 text-[15px] md:text-[30px] text-white">
                 Just Do It
               </p>
-              <p className="font-normal text-[10px] md:text-[16px] text-white">
+              <p className="font-normal text-[10px] md:text-[15px] text-white">
                 جدیدترین پوشاک ورزشی و کفش‌های حرفه‌ای برای سبک زندگی فعال.
               </p>
             </div>
@@ -82,7 +82,7 @@ function TopBrands() {
             />
           </div>
           <div className="flex gap-8 md:gap-30 pr-5 ">
-            <button className="bg-black text-white  bottom-28 relative md:bottom-40 rounded-[8px] md:rounded-2xl w-30 h-6 md:w-50 md:h-10 text-[9px] md:text-[14px] md:mr-3">
+            <button className="bg-black text-white  bottom-28 relative md:bottom-46 rounded-[8px] md:rounded-2xl w-30 h-6 md:w-50 md:h-10 text-[9px] md:text-[14px] md:mr-3">
               مشاهده محصولات NIKE
             </button>
             <Image
@@ -90,7 +90,7 @@ function TopBrands() {
               alt="lolo"
               width={0}
               height={0}
-              className="relative bottom-49 md:bottom-75 w-[110px] h-[100px] md:w-[200px] md:h-[190px]"
+              className="relative bottom-49 md:bottom-80 w-[110px] h-[100px] md:w-[200px] md:h-[190px]"
             />
           </div>
         </SwiperSlide>
