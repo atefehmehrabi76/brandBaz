@@ -7,12 +7,14 @@ import React from "react";
 import Link from "next/link";
 import HeaderImagesMobile from "../(mobile)/HeaderImagesMobile";
 import SeenRecetly from "@/components/(home)/SeenRecently";
+import TopBrands from "@/components/(home)/TopBrands";
 
 function Home() {
   return (
     <div className=" mx-auto">
       <HeaderImagesMobile />
       <ImageHeader />
+      <TopBrands />
       <BestSeller />
       <div className="py-6">
         <div className="hidden md:block h-[350px] mb-6 mx-20">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { bestSellersWomen } from "@/constants/womenProduct";
 
-function BestSellers() {
+function BestSells() {
   return (
     <section className="hidden md:block container mx-auto mb-[50px] px-4">
       <h3 className="text-3xl font-medium  my-5">پر فروش ترین ها</h3>
@@ -66,4 +66,4 @@ function BestSellers() {
   );
 }
 
-export default BestSellers;
+export default BestSells;

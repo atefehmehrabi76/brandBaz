@@ -49,13 +49,14 @@ function Header() {
               <span className="absolute top-3 right-3 bg-red-500  w-2 h-2 flex items-center justify-center rounded-full" />
             </button>
 
-            <button
+            <Link
+              href="/cart"
               type="button"
               className="hidden md:block relative p-2 hover:bg-gray-100 rounded-full transition-colors"
               aria-label="سبد خرید"
             >
               <PiShoppingBag className="w-[25.3px] h-[29.87px]" />
-            </button>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center ">

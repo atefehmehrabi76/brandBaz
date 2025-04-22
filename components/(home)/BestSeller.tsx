@@ -8,7 +8,7 @@ function BestSeller() {
 
   return (
     <>
-      <section className="container mx-auto px-4 mt-5 md:my-8">
+      <section className="container mx-auto px-4  ">
         <h2 className="text-[12px] md:text-2xl font-medium mb-6 text-right">
           پر فروش ترین ها
         </h2>

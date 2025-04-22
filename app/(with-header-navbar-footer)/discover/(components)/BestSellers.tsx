@@ -24,7 +24,7 @@ function BestSellers() {
             } `}
           >
             <div className="bg-white rounded-[10.8px]">
-              <div className=" relative w-[65px] h-[25px] md:h-[13px] mx-auto m-3">
+              <div className=" relative w-[38px] h-[25px] md:h-[24px] mx-auto m-3">
                 <Image
                   src={`${baseUrlImg}/${item.product.brand.image}`}
                   alt={item.product.title}

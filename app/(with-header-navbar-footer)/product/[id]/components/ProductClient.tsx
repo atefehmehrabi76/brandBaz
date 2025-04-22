@@ -133,15 +133,13 @@ function ProductClient({ productId }: { productId: string }) {
 
           <div className="mt-5">
             <p className="text-[#A1A1A1] text-[15px]">
-              {isExpanded
-                ? product.description
-                : product.description.substring(0, 130) + "..." ||
-                  "توضیحات محصول موجود نیست."}
+              {product.description.substring(0, 165) + ".    " ||
+                "توضیحات محصول موجود نیست."}
               <span
                 onClick={toggleDescription}
-                className="text-black hover:cursor-pointer"
+                className="text-black hover:cursor-pointer border-b-[1.2px] pb-[6px]  border-[#CBCBCB]"
               >
-                {isExpanded ? "توضیحات کمتر" : "توضیحات بیشتر"}
+                توضیحات بیشتر
               </span>
             </p>
           </div>

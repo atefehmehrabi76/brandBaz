@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 import Main from "./(components)/Main";
 import Favorites from "./(components)/Favorites";
-import BestSellers from "./(components)/BestSellers";
+import BestSells from "./(components)/BestSells";
 
 async function page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   return (
     <div>
       <Main productId={slug} />
-      <BestSellers />
+      <BestSells />
 
       <div className="hidden md:block h-[350px] mb-6 mx-auto container ">
         <div className="relative mx-auto w-[1240px] h-[350px]">
